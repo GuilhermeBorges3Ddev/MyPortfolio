@@ -49,10 +49,10 @@ const Index = () => {
             {isMobile && (
               <div className="rounded-xl overflow-hidden bg-[#1a1a1a]/90 backdrop-blur-md p-5 shadow-lg mb-6 light:bg-white/90">
                 <div className="mb-8 animate-fade-in">
-                  <h1 className="text-4xl font-bold text-neon mb-4 font-terminal light:text-darkgreen">Abid Ahmad</h1>
+                  <h1 className="text-4xl font-bold text-neon mb-4 font-terminal light:text-darkgreen">Guilherme S. Borges</h1>
                   
                   <p className="mb-3 light:text-gray-700">
-                    I am <strong>Abid Ahmad</strong>, an Ethical Hacker and Cyber Security Specialist with over six years of experience. I'm passionate about building robust information security architecture, developing leading-edge organizations, and fostering cross-functional collaboration between security teams, IT, Risk Management, AI Security and Privacy, and Non-Perceptible Networks (VPN).
+                    I am <strong>Guilherme S. Borges</strong>, an Ethical Hacker and Cyber Security Specialist with over six years of experience. I'm passionate about building robust information security architecture, developing leading-edge organizations, and fostering cross-functional collaboration between security teams, IT, Risk Management, AI Security and Privacy, and Non-Perceptible Networks (VPN).
                   </p>
                   
                   <p className="mb-3 light:text-gray-700">
@@ -99,10 +99,10 @@ const Index = () => {
             <div className="rounded-xl overflow-hidden bg-[#1a1a1a]/90 backdrop-blur-md p-5 shadow-lg mb-6 light:bg-white/90">
               {/* Bio Section (hidden on mobile) */}
               <div className="hidden md:block mb-8 animate-fade-in">
-                <h1 className="text-4xl font-bold text-neon mb-4 font-terminal light:text-darkgreen">Abid Ahmad</h1>
+                <h1 className="text-4xl font-bold text-neon mb-4 font-terminal light:text-darkgreen">Guilherme S. Borges</h1>
                 
                 <p className="mb-3 light:text-gray-700">
-                  I am <strong>Abid Ahmad</strong>, an Ethical Hacker and Cyber Security Specialist with over six years of experience. I'm passionate about building robust information security architecture, developing leading-edge organizations, and fostering cross-functional collaboration between security teams, IT, Risk Management, AI Security and Privacy, and Non-Perceptible Networks (VPN).
+                  You can call me as <strong>Guibo/Borgex</strong>, an Ethical Hacker and Cyber Security Specialist with over six years of experience. I'm passionate about building robust information security architecture, developing leading-edge organizations, and fostering cross-functional collaboration between security teams, IT, Risk Management, AI Security and Privacy, and Non-Perceptible Networks (VPN).
                 </p>
                 
                 <p className="mb-3 light:text-gray-700">

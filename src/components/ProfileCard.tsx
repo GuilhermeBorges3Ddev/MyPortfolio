@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import { Twitter, Linkedin, Github, Globe, Mail } from 'lucide-react';
-// No need to import the CSS here since it's already imported in index.css
+import { Globe, Mail } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { socialLinks } from '@/lib/social-links';
 
 const titles = [
-  "Cyber Security Researcher",
+  "Cyber Security Private Investigator",
   "Ethical Hacker",
-  "Security Specialist",
   "Penetration Tester"
 ];
 
 // Array of photos to cycle through
 const photos = [
-  "/uploads/photo1.jpg", // Mask photo
-  "/uploads/photo2.jpg"  // Formal photo
+  "/uploads/photo1.jpeg", // Mask photo
+  "/uploads/photo2.jpeg"  // Unmasked photo
 ];
 
 const ProfileCard = () => {
@@ -104,14 +104,14 @@ const ProfileCard = () => {
           >
             <img 
               src={currentPhoto}
-              alt="Abid Ahmad"
+              alt="Guilherme Borges"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[rgba(30,30,30,0.2)] to-[#1e1e1e] light:from-transparent light:via-[rgba(255,255,255,0.2)] light:to-white z-30"></div>
         </div>
         <div className="absolute bottom-0 w-full text-center pb-4 z-40">
-          <h1 className="text-3xl font-bold text-white font-terminal light:text-gray-800 drop-shadow-lg">ABID AHMAD</h1>
+          <h1 className="text-3xl font-bold text-white font-terminal light:text-gray-800 drop-shadow-lg">GUILHERME BORGES</h1>
           <div className="h-6">
             <p className="text-neon text-sm mt-1 font-mono inline-block light:text-darkgreen drop-shadow-md">
               {displayText}
@@ -121,14 +121,11 @@ const ProfileCard = () => {
         </div>
       </div>
       <div className="flex justify-center py-3 gap-4">
-        <a href="#" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
-          <Twitter size={14} />
+        <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
+          <FaLinkedin size={14} />
         </a>
-        <a href="#" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
-          <Linkedin size={14} />
-        </a>
-        <a href="#" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
-          <Github size={14} />
+        <a href={socialLinks.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
+          <FaGithub size={14} />
         </a>
         <a href="#" className="w-7 h-7 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:bg-neon hover:text-black transition-all duration-300 light:bg-gray-200 light:text-gray-600 light:hover:bg-darkgreen light:hover:text-white">
           <Globe size={14} />

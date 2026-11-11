@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import SideNav from '../components/SideNav';
 import SectionHeader from '../components/SectionHeader';
-import { Mail, Phone, MapPin, Twitter, Github, Linkedin, Home, User, Layers, BookOpen, MessageSquare, Code, MoonStar, Sun } from 'lucide-react';
+import { Mail, Phone, MapPin, Twitter, Home, User, BookOpen, MessageSquare, Code, MoonStar, Sun } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { NavBar } from '@/components/ui/tube-navbar';
 import { useTheme } from '@/hooks/use-theme';
+import { socialLinks } from '@/lib/social-links';
 
 const ContactItem = ({ icon, title, content }) => {
   const IconComponent = icon;
@@ -20,13 +22,14 @@ const ContactItem = ({ icon, title, content }) => {
   );
 };
 
-const SocialButton = ({ icon, href }) => {
+const SocialButton = ({ icon, href, label }) => {
   const IconComponent = icon;
   return (
     <a 
       href={href} 
       target="_blank" 
       rel="noopener noreferrer"
+      aria-label={label}
       className="p-3 bg-darkcard/90 backdrop-blur-md rounded-full border border-neon/20 text-neon hover:bg-neon/10 transition-colors"
     >
       <IconComponent size={18} />
@@ -132,9 +135,9 @@ const Contact = () => {
                 <SectionHeader title="Follow Me" />
                 
                 <div className="flex gap-3 mt-4">
-                  <SocialButton icon={Twitter} href="#" />
-                  <SocialButton icon={Github} href="#" />
-                  <SocialButton icon={Linkedin} href="#" />
+                  <SocialButton icon={Twitter} href="#" label="Twitter" />
+                  <SocialButton icon={FaGithub} href={socialLinks.github} label="GitHub" />
+                  <SocialButton icon={FaLinkedin} href={socialLinks.linkedin} label="LinkedIn" />
                 </div>
               </div>
             </div>
